@@ -1,0 +1,234 @@
+/*-- scss:defaults --*/
+
+$link-color: #be830e;
+$presentation-font-size-root: 50px;
+/* See https://quarto.org/docs/presentations/revealjs/themes.html#customizing-themes */
+
+/*-- scss:rules --*/
+
+.reveal pre {
+    font-size: 0.85em;
+}
+
+.anu-gold { color: #be830e!important; }
+.anu-black { color: #000000!important; }
+.anu-white { color: #ffffff!important; }
+.anu-dgrey1 { color: #0d0d0d!important; }
+.anu-dgrey2 { color: #191919!important; }
+.anu-lgrey1 { color: #e6e6e6!important; }
+.anu-lgrey2 { color: #f2f2f2!important; }
+.anu-tgold { color: #f5edde!important; }
+
+div.callout-note {
+  border-left-color: #be830e !important!important;
+  border-left-width: 10px;
+}
+
+.anu-bg-gold { background-color: #be830e!important; }
+.anu-bg-black { background-color: #000000!important; }
+.anu-bg-white { background-color: #ffffff!important; }
+.anu-bg-dgrey1 { background-color: #0d0d0d!important; }
+.anu-bg-dgrey2 { background-color: #191919!important; }
+.anu-bg-lgrey1 { background-color: #e6e6e6!important; }
+.anu-bg-lgrey2 { background-color: #f2f2f2!important; }
+.anu-bg-tgold { background-color: #f5edde!important; }
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+#title-slide .title {
+  padding-top: 50px;
+  text-align: left!important;
+  font-size: 1.5em!important;
+  color: #be830e;
+  width: 80%;
+}
+
+#title-slide .subtitle {
+  text-align: left!important;
+  font-size: 1em!important;
+  color: #be830e;
+}
+
+#title-slide .quarto-title-authors {
+  text-align: left!important;
+  display: block;
+}
+
+#title-slide .date {
+  text-align: left!important;
+  font-size: 0.6em!important;
+  padding-top: 50px;
+}
+
+
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  bottom: unset !important;
+  right: unset !important;
+  top: 5px;
+  left: 12px;
+  height: 20px !important;
+  width: 20x !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+#title-slide .slide-logo {
+  display: none!important;
+}
+
+
+
+
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 14px !important;
+  right: 14px !important;
+  top: unset !important;
+  color: #777777 !important;
+  font-size: 0.25em!important;
+}
+
+.reveal .slide-number > a[href*='title-slide'] {
+  display: none;
+}
+
+
+#title-slide {
+  font-size: 1.2em!important;
+}
+
+
+.callout {
+  font-size: 34pt!important;
+}
+
+
+h2 {
+  color: #be830e!important;
+}
+
+
+
+.slide-number:first-child {
+  display:none!important;
+}
+
+
+h2 {
+  display: block;
+  font-size: 1.5em!important;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+
+
+.box {
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 5px solid #BE830E;
+  padding: 20px;
+  background-color: #F5EDDE;
+  font-size: 0.85em;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.h4 {  height: 400px; }
+.h5 {  height: 500px; }
+.h-80 { height: 80%; }
+.h-100 { height: 100%; }
+
+.font-small {
+  font-size: 1.2rem;
+}
+
+
+
+.fa-ul {
+    list-style-type: none!important;
+    margin-left: var(--fa-li-margin, 2.5em)!important;
+    padding-left: 0!important;
+}
+
+pre > code.sourceCode > span {
+    color: #F2F3F5;
+}
+
+.blockquote {
+  width:70%;
+  margin: 0.3em auto;
+  font-family: Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 2em;
+  border-left:8px solid #be830e ;
+  line-height:1.6;
+  position: relative;
+  background: rgba(250, 250, 250, 0.8);
+}
+
+.reveal h1 {
+  color:#be830e;
+}
+
+.circle-image {
+  background: #000;
+  border-radius: 50%;
+  border: solid 3px white;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+
+.reveal img, .reveal p {
+    margin: 0 0;
+}
+
+.slide-chalkboard-buttons > span:first-child {
+  display: none!important;
+}
+
+a {
+  color: #be830e!important;
+}
+
+
+/* For Hero Titles */
+.f-headline .remark-code, .f-headline code, .f-6 code, .f-6 .remark-code, .f-6, .f-headline { font-size: 6rem!important; }
+.f-subheadline code, .f-5 code, .f-subheadline .remark-code, .f-5 .remark-code, .f-5, .f-subheadline { font-size: 5rem!important; }
+/* Type Scale */
+.f1 code, .f1 .remark-code, .f1 { font-size: 3rem!important; }
+.f2 code, .f2 .remark-code, .f2 { font-size: 2.25rem!important; }
+.f3 code, .f3 .remark-code, .f3 { font-size: 1.5rem!important; }
+.f4 code, .f4 .remark-code, .f4 { font-size: 1.25rem!important; }
+.f5 code, .f5 .remark-code, .f5 { font-size: 1rem!important; }
+.f6 code, .f6 .remark-code, .f6 { font-size: .875rem!important; }
+.f7 code, .f7 .remark-code, .f7 { font-size: .75rem!important; }
+
+.ba { border-style: solid; border-width: 1px; }
+
+.marker-yellow {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 225, 0, 0.1),
+    rgba(255, 225, 0, 0.7) 5%,
+    rgba(255, 225, 0, 0.3)
+  );
+}
