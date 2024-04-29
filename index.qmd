@@ -1,5 +1,5 @@
 ---
-title: Resources for Statistics and Data Science
+title: "[Local ANU Resources for Statistics and Data Science]{.f-subheadline}"
 subtitle: BIOL8700 Guest Lecture
 format:
   anu-light-revealjs:
