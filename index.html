@@ -345,7 +345,7 @@ Emi Tanaka
 
   <p class="date">30th April 2024</p>
 </section>
-<section id="about-me" class="slide level2" data-background-color="#F5EDDE">
+<section id="about-me" class="slide level2">
 <h2>About me</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
@@ -384,7 +384,7 @@ Emi Tanaka
 <p>This slide is available at <a href="https://anu-bdsi.github.io/BIOL8700">anu-bdsi.github.io/BIOL8700</a>.</p>
 </div>
 </section>
-<section id="biological-data-science-institute" class="slide level2" data-background-color="#F5EDDE">
+<section id="biological-data-science-institute" class="slide level2">
 <h2><i class="fa-solid fa-dna" aria-label="dna"></i> Biological Data Science Institute</h2>
 <div class="f2" style="margin-bottom:2%;">
 <p>BDSI brings together a diverse range of experts providing an interdisciplinary approach to life science, data science, research and teaching.</p>
@@ -432,7 +432,7 @@ Emi Tanaka
 <defs> <pattern id="You?" patternunits="userSpaceOnUse" width="100" height="100"> <image href="images/bdsi-staff/no-pic.jpg" x="-25" width="150" height="100"></image> </pattern> </defs> <polygon class="hex" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#You?)"></polygon> <text x="50%" y="120" text-anchor="middle" style="font-size: 0.2em;">You?</text>
 </svg>
 </section>
-<section id="bdsi-workshops" class="slide level2" data-background-color="#F5EDDE">
+<section id="bdsi-workshops" class="slide level2">
 <h2>BDSI Workshops</h2>
 <div class="columns">
 <div class="column" style="width:30%;">
@@ -541,7 +541,7 @@ Emi Tanaka
 </div>
 </div>
 </section>
-<section id="upcoming-workhops" class="slide level2" data-background-color="#F5EDDE">
+<section id="upcoming-workhops" class="slide level2">
 <h2>Upcoming Workhops</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
@@ -551,8 +551,8 @@ Emi Tanaka
 <li>Data Wrangling with R (Part 1)</li>
 <li>Data Visualisation with R (Part 1)</li>
 <li>Reproducible Research with Quarto</li>
-<li>Design and analysis of experiments</li>
-<li>Generalised linear models</li>
+<li>Design and Analysis of Experiments</li>
+<li>Generalised Linear Models</li>
 </ul>
 </div><div class="column f2" style="width:30%;">
 <p>Want to be notified? Join our mailing list!</p>
@@ -756,6 +756,24 @@ Emi Tanaka
           RevealZoom
         ]
       });
+    </script>
+    
+    <script type="text/javascript">
+        Reveal.on('ready', event => {
+          if (event.indexh === 0) {
+            document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+          }
+        });
+        Reveal.addEventListener('slidechanged', (event) => {
+          if (event.indexh === 0) {
+            Reveal.configure({ slideNumber: null });
+            document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+          }
+          if (event.indexh === 1) {
+            Reveal.configure({ slideNumber: 'c/t' });
+            document.querySelector("div.has-logo > img.slide-logo").style.display = null;
+          }
+        });
     </script>
     
     <script>

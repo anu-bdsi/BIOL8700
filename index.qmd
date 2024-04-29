@@ -9,6 +9,9 @@ format:
     html-math-method: katex
     self-contained: false
     css: styles.css
+    #parallax-background-image: images/background.png
+    #parallax-background-size: "6000px 3px"
+    #parallax-background-horizontal: 20
 author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/30
@@ -16,7 +19,7 @@ date-format: "D[th] MMMM YYYY"
 ---
 
 
-## About me {background-color="#F5EDDE"}
+## About me 
 
 ::: columns
 
@@ -61,7 +64,7 @@ This slide is available at [anu-bdsi.github.io/BIOL8700](https://anu-bdsi.github
 :::
 
 
-## {{< fa dna >}} Biological Data Science Institute {background-color="#F5EDDE"}
+## {{< fa dna >}} Biological Data Science Institute 
 
 ```{r}
 hex <- function(img, name) {
@@ -94,7 +97,7 @@ BDSI brings together a diverse range of experts providing an interdisciplinary a
 
 
 
-## BDSI Workshops {background-color="#F5EDDE"}
+## BDSI Workshops 
 
 ::: columns
 
@@ -274,7 +277,7 @@ SSN is led by **A/Prof. Alice Richardson**.
 :::
 
 
-## Upcoming Workhops {background-color="#F5EDDE"}
+## Upcoming Workhops 
 
 ::: columns
 
@@ -286,8 +289,8 @@ In Semester 2 (TBD):
 - Data Wrangling with R (Part 1)
 - Data Visualisation with R (Part 1)
 - Reproducible Research with Quarto
-- Design and analysis of experiments
-- Generalised linear models
+- Design and Analysis of Experiments
+- Generalised Linear Models
 
 :::
 
